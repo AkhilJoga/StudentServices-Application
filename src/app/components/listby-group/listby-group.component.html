@@ -1,0 +1,45 @@
+
+<table class="table table-dark table-striped">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Class Section</th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let s of students; index as i">
+    <td>   {{s.id}} </td>
+    <td>   {{s.s_class}} </td>
+    <td><button type="button" class="btn btn-primary" (click)="groupBySection(s.s_class)" >
+        Get Class Section Data
+    </button></td>
+    </tr>
+    </tbody>
+  </table>
+
+  <br/>
+
+  
+<table class="table table-dark table-striped">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">First Name</th>
+        <th scope="col">Last Name</th>
+        <th scope="col">Group Name</th>
+        <th scope="col">Date of Birth</th>
+      </tr>
+    </thead>
+    <tbody>
+  
+    <tr *ngFor="let s of groupBy; index as i">
+    <td>   {{s.id}} </td>
+      <td> {{s.firstName}} </td>
+      <td> {{s.lastName}} </td> 
+      <td>  {{s.subject}} </td>
+      <td>  {{s.dob}}  </td>
+    </tr>
+    </tbody>
+  
+  </table>

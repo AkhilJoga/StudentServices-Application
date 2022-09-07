@@ -1,0 +1,57 @@
+<div class="card" style="width: 80rem;">
+
+    <div class="card-body">
+
+        <h5 class="card-title">Create Students</h5>
+        <br/>
+        <div class="row">
+            
+            <div class="col">
+                <span>Student First Name:</span>
+              <input type="text" class="form-control" [(ngModel)]="students.firstName"
+              placeholder="Student First Name" aria-label="Student First Name">
+            </div>
+            <div class="col">
+                <span>Student Last Name:</span>
+              <input type="text" class="form-control"  [(ngModel)]="students.lastName"
+              placeholder="Student Last Name" aria-label="Student Last Name">
+            </div>
+        </div>
+    
+        <div class="row">
+           
+            <div class="col">
+             <span>Student Class:</span>
+             <input type="text" class="form-control"  [(ngModel)]="students.s_class"
+             placeholder="Student Class" aria-label="Student Class">
+            </div>
+            <div class="col">
+              <span>Student Subject:</span>
+             <input type="text" class="form-control"  [(ngModel)]="students.subject"
+             placeholder="Student Subject" aria-label="Student Subject">
+             </div>
+             
+        </div>  
+        
+        <div class="row">
+           
+            <div class="col">
+             <span>Student Class:</span>
+             <input type="text" class="form-control"  [(ngModel)]="students.dob"
+             placeholder="DD/MM/YYYY" aria-label="Student Class">
+            </div>
+
+            <div class="col">
+              <span>Student ID:</span>
+             <input type="number" class="form-control"  [(ngModel)]="students.id"
+             placeholder="Student Subject" aria-label="Student Subject">
+             </div>
+             
+        </div>  
+        
+          <div class="col-12 text-right">
+            <br/>
+            <button type="submit" class="btn btn-outline-primary" (click)="save()">Submit</button>
+          </div>
+    </div>
+</div>
